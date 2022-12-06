@@ -1,0 +1,428 @@
+:root {
+  --brand-color: #2196f3;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #212121;
+}
+
+/* Утиліти */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Шапка */
+
+.site-logo {
+  display: flex;
+}
+
+.site-logo .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-blue {
+  color: var(--brand-color);
+}
+
+.nav {
+  margin-left: 93px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.link-nav:hover,
+.link-nav:focus {
+  color: var(--brand-color);
+}
+
+.contact {
+  display: flex;
+}
+
+.line-box {
+  padding: 0;
+
+  border: 1px solid;
+  border-color: #ececec;
+}
+
+/* Контакти */
+
+.tel {
+  margin-left: 40px;
+}
+
+.site-contact {
+  margin-left: auto;
+}
+
+.link-contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.link-contact:hover,
+.link-contact:focus {
+  color: var(--brand-color);
+}
+
+/* Герой */
+
+.hero {
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #161313;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.button-order {
+  width: 200px;
+  cursor: pointer;
+  background: var(--brand-color);
+  font-family: "Roboto";
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+/* Переваги */
+.invisible-title {
+  display: none;
+}
+
+.benefits {
+  display: flex;
+
+  list-style-type: none;
+}
+.benefits .benefits-item {
+  width: 270px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.benefits-text {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.benefits-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Приклади робіт */
+
+.work-section {
+  padding-top: 0;
+}
+
+.work-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.work {
+  display: flex;
+  list-style-type: none;
+}
+
+.work-list:not(:last-child) {
+  margin-right: 30px;
+}
+/* Команда */
+
+.team-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  display: flex;
+  list-style-type: none;
+}
+
+.team-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.name-title {
+  text-align: center;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  text-align: center;
+
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+/* Підвал */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
+  margin-top: 28px;
+  list-style-type: none;
+}
+
+.address-list:not(:last-child) {
+  margin-bottom: 12px;
+}
+.address-list .location {
+  color: #ffffff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.contact-footer {
+  color: #ffffff99;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+/* Portfolio.html */
+
+.portfolio-nav {
+  justify-content: center;
+
+  padding-bottom: 50px;
+  display: flex;
+  list-style-type: none;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-item .all-button {
+  border-radius: 4px;
+  background: #2196f3;
+}
+.portfolio-item .portfolio-button {
+  border-radius: 4px;
+  background: #f5f4fa;
+}
+
+.all-button {
+  padding: 6px 22px;
+  font-family: "Roboto";
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.portfolio-button {
+  padding: 6px 22px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.title-portfolio {
+  display: none;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.portfolio-card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-title {
+  margin-bottom: 4px;
+
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.border-box {
+  padding: 20px 24px;
+  border: 1px solid;
+  border-color: #eeeeee;
+}
