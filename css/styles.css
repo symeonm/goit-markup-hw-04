@@ -9,6 +9,12 @@ body {
 
 /* Утиліти */
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -155,7 +161,7 @@ h6 {
 /* Герой */
 
 .hero-image {
-  height: 600px;
+  max-height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -166,6 +172,7 @@ h6 {
     ),
     url(../images/heroy.jpg);
 }
+
 .hero {
   justify-content: center;
   padding-top: 200px;
@@ -192,7 +199,15 @@ h6 {
 }
 
 .button-order {
-  width: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 0.06em;
+
+  padding: 10px 32px;
+  border: 0px;
   cursor: pointer;
   background: var(--brand-color);
   font-family: "Roboto";
@@ -201,7 +216,9 @@ h6 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* Переваги */
@@ -228,6 +245,38 @@ h6 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+
+.bloc-antenna {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 25px 102.34px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.bloc-clock {
+  display: flex;
+  padding: 25px 101.5px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.bloc-diagram {
+  display: flex;
+  padding: 33.2px 100px 33.11px 100px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.bloc-astronaut {
+  display: flex;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .benefits-text {
@@ -267,6 +316,14 @@ h6 {
 }
 /* Команда */
 
+.team-background {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  max-height: 708px;
+  background-color: rgba(245, 244, 250, 1);
+}
+
 .team-title {
   text-align: center;
   margin-top: 0;
@@ -281,6 +338,16 @@ h6 {
 .team {
   display: flex;
   list-style-type: none;
+}
+
+.team-list {
+  width: 270px;
+  height: 428px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list:not(:last-child) {
