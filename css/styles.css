@@ -61,6 +61,11 @@ h6 {
 
 /* Шапка */
 
+.header {
+  border-bottom: 1px solid;
+  border-color: #ececec;
+}
+
 .site-logo {
   display: flex;
 }
@@ -113,15 +118,6 @@ h6 {
 .link-nav:hover,
 .link-nav:focus {
   color: var(--brand-color);
-}
-
-.line-box {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  border: 1px solid;
-  border-color: #ececec;
 }
 
 /* Контакти */
@@ -318,10 +314,6 @@ h6 {
 /* Команда */
 
 .team-background {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  max-height: 708px;
   background-color: rgba(245, 244, 250, 1);
 }
 
@@ -407,7 +399,8 @@ h6 {
   height: 44px;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--brand-color);
   fill: #ffffff;
 }
@@ -453,19 +446,13 @@ h6 {
 /* Підвал */
 
 .footer {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
-  height: 251px;
-
-  background-color: #2f303a;
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container-footer {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   align-items: baseline;
 }
 
@@ -557,6 +544,8 @@ h6 {
 .portfolio-button:focus {
   background: var(--brand-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .all-button {
@@ -589,22 +578,12 @@ h6 {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   list-style-type: none;
 }
 
 .portfolio-card {
-  width: 370px;
-  height: 404px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.portfolio-card:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-card:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-link {
